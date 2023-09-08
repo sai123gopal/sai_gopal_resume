@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Gopal - Resume</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script type="module" src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Mobile Menu Icon (visible on small screens) -->
+            <div class="mobile-menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="main-menu">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h3>Sai Gopal</h3>
+    </header>
+
+<!-- Full-Screen Dialog (hidden by default) -->
+<div class="full-screen-dialog" id="full-screen-dialog">
+    <div class="dialog-content">
+        <span class="close" id="close-full-screen-dialog" >&times;</span>
+        <!-- Dialog content goes here -->
+        <ul class="dialog-menu">
+            <li class="dialog-card"><a href="#summary">Summary</a></li>
+            <li class="dialog-card"><a href="#projects">Projects</a></li>
+            <li class="dialog-card"><a href="#skills">Skills</a></li>
+            <li class="dialog-card"><a href="#achievements">Achievements</a></li>
+            <li class="dialog-card"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+    
+    <section id="summary" class="summary">
+        <h2>Summary</h2>
+        <p>I am a passionate Software Engineer with expertise in Android app development using Java, Kotlin, and Firebase. I have a strong focus on building high-performance and user-friendly mobile applications. My experience includes collaborating with cross-functional teams to deliver innovative solutions.</p>
+        <p>In my career, I have developed the VIT-AP mobile app, which serves as a comprehensive platform for students and faculty, enhancing collaboration and coordination within the learning environment. I'm also the creator of Movie Hub, a popular movie app that simplifies movie discovery and provides detailed information on the latest releases.</p>
+        <p>With a commitment to quality and a drive for continuous improvement, I am actively seeking opportunities to contribute my expertise to exciting and challenging projects. Let's connect and explore how I can make a valuable contribution to your team!</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+    
+        <!-- Work Experience Card Container -->
+        <div class="experience-card-container">
+            <!-- Work Experience Card 1 -->
+            <div class="experience-card">
+                <h3>Android Developer</h3>
+                <p>NanoHealth</p>
+                <p>06/2023 - Present, Hyderabad</p>
+                <ul>
+                    <li>Proficiently implemented MVVM architecture for improved app performance and maintainability.</li>
+                    <li>Successfully integrated REST APIs using Retrofit, enhancing app efficiency.</li>
+                    <li>Integrated Firebase Cloud Messaging (FCM) for effective communication.</li>
+                </ul>
+            </div>
+    
+            <!-- Work Experience Card 2 -->
+            <div class="experience-card">
+                <h3>Android Application Developer</h3>
+                <p>OSOS Pvt. Ltd (Spaarks)</p>
+                <p>10/2022 - 03/2023, Hyderabad</p>
+                <ul>
+                    <li>Developed Android apps with API integration, Retrofit, and REST APIs.</li>
+                    <li>Utilized Java and Data Binding to enhance app functionality.</li>
+                    <li>Collaborated with cross-functional teams to define app features and functionality.</li>
+                </ul>
+            </div>
+    
+            <!-- Add more work experience cards as needed -->
+        </div>
+    </section>
+    
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+    
+        <!-- Project Card Container -->
+        <div class="project-card-container">
+            <!-- Project Card: VIT-AP -->
+            <div class="project-card" onclick="openProjectDialog(0)">
+                <!-- <div class="project-type-chip-container">
+                    <div class="project-card-chip">
+                        <p>Java</p>
+                    </div>
+                     </div> -->
+                <img src="images/vitap.webp" alt="VIT-AP Image" >
+                <h3><a href="https://play.google.com/store/apps/details?id=com.collage.vit_ap&hl=en_US&gl=US">VIT-AP Mobile App</a></h3>
+                <p>VIT-AP Mobile App for students and faculty. Enhancing collaboration and coordination within the learning environment.</p>
+
+            <div class="skills-chip-container">
+                <div class="skills-chip">
+                    <p>Java</p>
+                </div>
+                <div class="skills-chip">
+                    <p>Firebase</p>
+                </div>
+                <div class="skills-chip">
+                    <p>Retrofit</p>
+                </div>
+                <div class="skills-chip">
+                    <p>MVVM</p>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="project-card" onclick="openProjectDialog(1)">
+                <img src="images/immigpt.webp" alt="immigpt">
+                <h3><a href="https://play.google.com/store/apps/details?id=com.etuloverduolc.immigpt">ImmiGPT</a></h3>
+                <p>"ImmiGPT" is a cutting-edge app powered by advanced artificial intelligence that specializes in addressing all types of immigration questions.</p>
+                <div class="skills-chip-container">
+                    <div class="skills-chip">
+                        <p>Flutter</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>Dart</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>Android</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>IOS</p>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="project-card" onclick="openProjectDialog(2)">
+                <img src="images/github_icon.png" alt="Movie Hub Image">
+                <h3><a href="https://github.com/sai123gopal/productsApp">Products App</a></h3>
+                <p>A Kotlin-based app using Data Binding, MVVM, and Retrofit for easy product management. Upload, edit, and view product listings.</p>
+                <div class="skills-chip-container">
+                    <div class="skills-chip">
+                        <p>Kotlin</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>Retrofit</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>Data Binding</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>MVVM</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Project Card: Black Browser -->
+            <div class="project-card" onclick="openProjectDialog(3)">
+                <img src="images/black br.webp" alt="Black Browser Image">
+                <h3><a href="https://play.google.com/store/apps/details?id=com.saigopal.browser&hl=en_US&gl=US">Black Browser: Simple & Fast</a></h3>
+                <p>A minimalist and high-speed web browser with a user-friendly interface and advanced features.</p>
+            
+                <div class="skills-chip-container">
+                    <div class="skills-chip">
+                        <p>Java</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>Firebase</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>SQLite</p>
+                    </div>
+                </div>
+
+            </div>
+    
+            <!-- Project Card: Movie Hub -->
+            <div class="project-card" onclick="openProjectDialog(4)">
+                <img src="images/github_icon.png" alt="Movie Hub Image">
+                <h3><a href="https://github.com/sai123gopal/Movie_hub">Movie Hub</a></h3>
+                <p>An innovative movie app that simplifies movie discovery and provides comprehensive movie details.</p>
+            
+                <div class="skills-chip-container">
+                    <div class="skills-chip">
+                        <p>Java</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>Retrofit</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>Data Binding</p>
+                    </div>
+                    <div class="skills-chip">
+                        <p>MVVM</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Add this dialog container at the end of your HTML body -->
+<div class="project-dialog-container">
+    <div class="project-dialog">
+      <div class="project-dialog-content">
+        <span class="close-project-dialog" onclick="closeProjectDialog()">&times;</span>
+        <h3 id="project-dialog-title"></h3>
+        <p id="project-dialog-small-description"></p>
+        <p id="project-dialog-full-description"></p>
+        <a id="project-dialog-link" target="_blank">Link Preview</a>
+        <div class="preview-container" id="website-preview"> </div>
+      </div>
+    </div>
+  </div>
+  
+    
+    
+    <section id="skills" class="skills">
+        <h2>Skills Set</h2>
+    
+        <!-- Skills Chip Container -->
+        <div class="skills-chip-container">
+            <div class="skills-chip">
+                <p>Java</p>
+            </div>
+            <div class="skills-chip">
+                <p>Kotlin</p>
+            </div>
+            <div class="skills-chip">
+                <p>Retrofit</p>
+            </div>
+            <div class="skills-chip">
+                <p>Android</p>
+            </div>
+            <div class="skills-chip">
+                <p>Firebase</p>
+            </div>
+            <div class="skills-chip">
+                <p>Flutter</p>
+            </div>
+            <div class="skills-chip">
+                <p>Dart</p>
+            </div>
+            <div class="skills-chip">
+                <p>Web Designing</p>
+            </div>
+            <div class="skills-chip">
+                <p>Node.js</p>
+            </div>
+            <div class="skills-chip">
+                <p>SQL</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="achievements">
+        <h2>Achievements</h2>
+    
+        <!-- Achievements List Container -->
+        <ul class="achievements-list">
+            <!-- Achievement 1 -->
+            <li class="achievement">
+                <h3>Third Prize Winner in InnoApp Contest</h3>
+                <p>October 2021</p>
+                <p>Received the third prize in the InnoApp Contest for innovative contributions to mobile app development.</p>
+            </li>
+    
+            <!-- Achievement 2 -->
+            <li class="achievement">
+                <h3>Top 20 in All-India Flipr Hackathon 4.0</h3>
+                <p>March 2020</p>
+                <p>Ranked among the top 20 participants in the All-India Flipr Hackathon 4.0, showcasing problem-solving skills and technical prowess.</p>
+            </li>
+    
+            <!-- Add more achievements as needed -->
+        </ul>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+            <div class="contact-icon">
+                <img src="images/email.svg" alt="Email Icon">
+                <a href="mailto:saigopal.lingireddy@gmail.com">saigopal.lingireddy@gmail.com</a>
+            </div>
+            <div class="contact-icon">
+                <img src="images/call.svg" alt="Phone Icon">
+                <a href="tel:+917680876393">+91 7680876393</a>
+            </div>
+            <!-- Add more contact details and icons as needed -->
+        </div>
+    </section>
+     <!-- Add more sections as needed -->
+
+
+    <footer >
+        <p>&copy; 2023 Sai Gopal</p>
+    </footer>
+</body>
+</html>

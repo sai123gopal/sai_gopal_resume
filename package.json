@@ -1,0 +1,19 @@
+{
+  "name": "saigopal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sai",
+    "gopal",
+    "sai"
+  ],
+  "author": "sai gopal",
+  "license": "ISC",
+  "dependencies": {
+    "link-preview-js": "^3.0.5"
+  }
+}
