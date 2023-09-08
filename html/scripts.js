@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add event listeners to close the full-screen dialog when a card is clicked
     dialogCards.forEach(function (card) {
         card.addEventListener('click', function () {
-
             fullScreenDialog.classList.remove('show-dialog');
         });
     });
@@ -66,15 +65,14 @@ const projects = [
   }
 
   // Function to open the project dialog and fetch link previews
-  async function openProjectDialog(index) {
+  function openProjectDialog(index) {
     const projectDialog = document.querySelector('.project-dialog-container');
     const dialogTitle = document.getElementById('project-dialog-title');
     const dialogSmallDescription = document.getElementById('project-dialog-small-description');
     const dialogFullDescription = document.getElementById('project-dialog-full-description');
     const dialogLink = document.getElementById('project-dialog-link');
     const dialogLinkPreview = document.getElementById('project-dialog-link-preview');
-    const websitePreview = document.getElementById("website-preview");
-  
+
     // Get the project details from the projects list
     const project = projects[index];
   
@@ -87,15 +85,6 @@ const projects = [
 
     projectDialog.style.display = 'flex';
   
-    // Fetch metadata for the link
-    try {
-      getLinkPreview("https://www.youtube.com/watch?v=MejbOFk7H6c").then((data) =>
-      console.debug(data)
-    );
-    } catch (error) {
-      console.error('Error fetching link preview:', error);
-      // Handle any errors when fetching link metadata
-    }
 
   }
   
