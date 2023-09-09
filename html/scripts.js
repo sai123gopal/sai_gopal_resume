@@ -6,8 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const projectCard = document.getElementById('project-card');
     const dialogCards = document.querySelectorAll('.dialog-card');
     const scrollToTopLink  = document.getElementById('scroll-to-top');
-
     const sections = document.querySelectorAll('.fade-in');
+    const socialIcons = document.querySelectorAll('.social-icons a');
+
+    socialIcons.forEach(function (icon) {
+      icon.addEventListener('click', function (e) {
+        e.preventDefault();
+        const url = icon.getAttribute('href');
+        window.open(url, '_blank');
+      });
+    });
 
     function checkScroll() {
         sections.forEach(section => {

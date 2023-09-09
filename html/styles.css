@@ -4,13 +4,14 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ececec;
 }
 
 section{
-  padding-top: 7%;
+  padding-top: 6%;
 }
 /* Updated CSS for Header and Side Menu */
 header {
@@ -29,12 +30,24 @@ a{
   color: #2C121B;
 }
 
+.skills-chip a:hover{
+  color: #ececec;
+  text-decoration: none;
+}
+
+.skills-chip a{
+  text-decoration: none;
+}
+
 header h3 {
   margin: 0;
+  font-size: 1.7rem;
+  margin-left: 10%;
   order: 1; /* To place the name on the right */
 }
 
 nav {
+  justify-content: space-around;
   display: flex;
   align-items: center;
   order: 2; /* To place the menu on the left */
@@ -143,7 +156,7 @@ nav {
   margin: 3px 0;
 }
 /* Media Query for Small Screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   /* Show the menu icon on small screens */
   .mobile-menu-icon {
       display: block;
@@ -160,6 +173,33 @@ nav {
     text-align: center;
     justify-self: center;
     position:absolute;
+  }
+
+  .summary{
+    align-items: center;
+    flex-direction: column; 
+    display:block;
+    justify-content:none ;
+  }
+  
+  .summary h1{  
+    font-size: 10px;
+    color: #2C121B;
+  }
+
+  .summary-left{
+    max-width: 80%;
+  }
+  
+  .summary-right{
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center ;
+  }
+
+  .summary-right img{
+    border-radius: 0px;
   }
 
   /* Hide the main menu on small screens */
@@ -213,17 +253,47 @@ nav {
 
 }
 
-
 .summary{
-  max-width: 1000px;
   text-align: left;
   margin-left: auto;
-  width: 80%;
+  width: 90%;
   margin-right: auto;
-  flex: auto;
+  flex: content;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+.summary left{
+  max-width: 50%;
+}
+
+.summary right{
+  max-width: 50%;
+}
+
+.summary img{
+  float: right;
+  margin-right: 0px;
+  max-width: 60%;
+  border-radius: 20px;
+}
+
+.get-in-touch{
+  border-radius: 20px; 
+  gap: 10px;
+  display: flex;
+  align-items:start;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.summary h1{
+  position: relative;
+  display: flex;
+   font-size: 48px;
+  color: #2C121B;
+}
 
 /* Centered and vertically aligned Work Experience section */
 #experience {
@@ -303,6 +373,7 @@ nav {
   height: auto;
   height: 100px;
   align-self: center;
+  border-radius: 10px;
   width: 100px;
   margin-bottom: 10px;
 }
@@ -328,7 +399,6 @@ nav {
 .project-card-chip {
   background-color: #2C121B; /* Light color */
   border-radius: 20px; 
-  padding: 10px 20px; /* Adjust padding as needed */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -451,6 +521,8 @@ h2{
   list-style-type: none;
   padding: 5%;
   display: flex;
+  align-items: center;
+  align-self: centerx;
   flex-wrap: wrap;
   justify-content: center; /* Center horizontally */
   gap: 20px; /* Add horizontal margin */
@@ -459,6 +531,7 @@ h2{
 .achievement {
   background-color: #ffffff;
   border-radius: 8px;
+  align-items: center;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
@@ -531,6 +604,38 @@ h2{
 }
 
 
+#social-media {
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: block;
+  transition: transform 0.2s, filter 0.2s;
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  overflow: hidden; /* Hide any excess image content */
+}
+
+.social-icons img {
+  width: 100%; /* Ensure the image occupies the full width of its container */
+  height: 100%; /* Ensure the image occupies the full height of its container */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+
 footer {
   background-color: #2C121B; /* Primary color from your palette */
   color: #EEE7DF; /* Light color from your palette */
@@ -553,4 +658,6 @@ footer {
   background-color: #FFD95B; /* Change to a lighter or contrasting color */
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 }
+
+
 
