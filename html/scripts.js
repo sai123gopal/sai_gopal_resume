@@ -5,6 +5,36 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeFullScreenDialog = document.getElementById('close-full-screen-dialog');
     const projectCard = document.getElementById('project-card');
     const dialogCards = document.querySelectorAll('.dialog-card');
+    const scrollToTopLink  = document.getElementById('scroll-to-top');
+
+    const sections = document.querySelectorAll('.fade-in');
+
+    function checkScroll() {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight * 0.75) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    }
+
+    // Initial check on page load
+    checkScroll();
+
+    // Listen for scroll events
+    window.addEventListener('scroll', checkScroll);
+
+
+    scrollToTopLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({
+          top: 0
+      });
+    });
 
     mobileMenuIcon.addEventListener('click', function () {
         fullScreenDialog.classList.toggle('show-dialog');
@@ -87,6 +117,5 @@ const projects = [
   
 
   }
-  
-  // Rest of your code...
+
   
