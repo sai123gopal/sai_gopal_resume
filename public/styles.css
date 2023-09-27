@@ -154,7 +154,9 @@ nav {
 }
 /* Media Query for Small Screens */
 @media screen and (max-width: 750px) {
+
   /* Show the menu icon on small screens */
+  
   .mobile-menu-icon {
     display: block;
   }
@@ -247,6 +249,31 @@ nav {
   .contact-details {
     flex-direction: column;
   }
+
+  .app-card{
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .app-details {
+    order: 1; /* Move app details card to the top */
+}
+
+.screenshots-container {
+    order: 2; /* Move entire screenshots container below the app details card */
+    overflow:scroll;
+  position:relative;
+}
+
+.navigation-buttons {
+  display:block;
+  justify-content: start;
+  align-items: start;
+  margin-top: 10px;
+  width: 20%;
+}
+
+
 }
 
 .summary {
@@ -645,4 +672,92 @@ footer {
 .skills-card:hover {
   background-color: #ffd95b; /* Change to a lighter or contrasting color */
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+
+.app-card {
+  display: flex;
+  max-width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.app-details {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.app-logo {
+  max-width: 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.4);
+}
+
+.app-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.app-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.store-link {
+  align-self: self-end;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.screenshots-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.screenshots {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.screenshot {
+  width: auto;
+  max-height: 60vh;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.arrow-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
 }
