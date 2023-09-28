@@ -154,9 +154,8 @@ nav {
 }
 /* Media Query for Small Screens */
 @media screen and (max-width: 750px) {
-
   /* Show the menu icon on small screens */
-  
+
   .mobile-menu-icon {
     display: block;
   }
@@ -250,30 +249,29 @@ nav {
     flex-direction: column;
   }
 
-  .app-card{
+  .app-card {
     max-width: 90%;
     flex-direction: column;
   }
 
   .app-details {
     order: 1; /* Move app details card to the top */
-}
+  }
 
-.screenshots-container {
+  .screenshots-container {
     order: 2; /* Move entire screenshots container below the app details card */
-    overflow:scroll;
-  position:relative;
-}
+    overflow: scroll;
+    position: relative;
+    max-width: 90%;
+  }
 
-.navigation-buttons {
-  display:block;
-  justify-content: start;
-  align-items: start;
-  margin-top: 10px;
-  width: 20%;
-}
-
-
+  .navigation-buttons {
+    display: block;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+    width: 20%;
+  }
 }
 
 .summary {
@@ -674,7 +672,6 @@ footer {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 }
 
-
 .app-card {
   display: flex;
   max-width: 80%;
@@ -697,7 +694,7 @@ footer {
   max-width: 100px;
   border-radius: 10px;
   margin-bottom: 10px;
-  box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
 }
 
 .app-name {
@@ -731,6 +728,7 @@ footer {
 
 .screenshots {
   display: flex;
+  padding: 10px;
   width: 100%;
   transition: transform 0.5s ease;
 }
@@ -739,8 +737,13 @@ footer {
   width: auto;
   max-height: 60vh;
   flex-shrink: 0;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-right: 10px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+.screenshot:hover {
+  transform: scale(1.02);
 }
 
 .navigation-buttons {
@@ -752,12 +755,13 @@ footer {
 }
 
 .arrow-button {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #fff;
+  color: #2c121b;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 26px;
+  height: 26px;
   margin: 0 10px;
   cursor: pointer;
+  font-size: 16px; 
 }
