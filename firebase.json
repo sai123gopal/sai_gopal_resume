@@ -12,10 +12,14 @@
         "destination": "/index.html"
       }
     ],
-    "source": "**/*.@(jpg|jpeg|gif|png|webp)",
-    "headers": [ {
-      "key": "Cache-Control",
-      "value": "max-age=7200"
-    } ]
+    "headers":[
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|webp)",
+          "headers": [ {
+            "key": "Cache-Control",
+            "value": "max-age=900000"
+          } ]
+        }
+    ]
   }
 }
