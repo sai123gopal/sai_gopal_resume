@@ -746,6 +746,7 @@ footer {
 }
 
 .screenshots {
+  overflow-x: auto;
   display: flex;
   padding: 10px;
   width: 100%;

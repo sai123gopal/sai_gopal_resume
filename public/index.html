@@ -182,12 +182,6 @@
                 });
             }
 
-            const appCards = document.querySelectorAll('.app-card');
-
-            appCards.forEach((appCard) => {
-                setupAppCardNavigation(appCard);
-            });
-
 
         </script>
 
@@ -325,7 +319,13 @@
 
         </div>
 
+        <script>
+            const appCards = document.querySelectorAll('.app-card');
 
+            appCards.forEach((appCard) => {
+                setupAppCardNavigation(appCard);
+            });
+        </script>
 
     </section>
 
