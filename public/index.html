@@ -24,6 +24,7 @@
     <meta name="language" content="English">
     <meta name="author" content="Sai gopal">
 
+    <meta name="google-site-verification" content="nHeepp-BH670r8uo0WGRy-w5OJ3E0CnrJVTlYQqC1q0" />
 
 </head>
 
@@ -146,8 +147,6 @@
             function setupAppCardNavigation(appCard) {
                 const screenshotsContainer = appCard.querySelector('.screenshots-container');
                 const screenshots = appCard.querySelector('.screenshots');
-                const prevButton = appCard.querySelector('.prev-button');
-                const nextButton = appCard.querySelector('.next-button');
                 const screenshotWidth = appCard.querySelector('.screenshot').offsetWidth;
                 let currentIndex = 0;
 
@@ -172,14 +171,6 @@
                     const offset = -currentIndex * screenshotWidth;
                     screenshots.style.transform = `translateX(${offset}px)`;
                 }
-
-                prevButton.addEventListener('click', () => {
-                    scrollScreenshots('prev');
-                });
-
-                nextButton.addEventListener('click', () => {
-                    scrollScreenshots('next');
-                });
             }
 
 
@@ -215,18 +206,6 @@
                     <img src="https://play-lh.googleusercontent.com/zKc53HMINc6dgUnrq49lEsHPCRU5vyPNzTrfOihoTQES_ir-v0ZJ3Ia0d2kOwupUSLM=w1052-h592-rw"
                         alt="Screenshot 5" class="screenshot">
                 </div>
-                <div class="navigation-buttons">
-                    <svg class="arrow-button prev-button" xmlns="http://www.w3.org/2000/svg" height="40px"
-                        viewBox="0 0 320 512">
-                        <path
-                            d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-                    </svg>
-                    <svg class="arrow-button next-button" xmlns="http://www.w3.org/2000/svg" height="40px"
-                        viewBox="0 0 320 512">
-                        <path
-                            d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                    </svg>
-                </div>
             </div>
 
         </div>
@@ -260,18 +239,6 @@
                     <img src="https://play-lh.googleusercontent.com/dEF7Yp_FvDLIxPVeh5YMC351WhNa1y6pk7hW02MWrzPyEIyfQQFKt8pZPidBuWz7RBQ=w1052-h592-rw"
                         alt="Screenshot 4" class="screenshot">
                 </div>
-                <div class="navigation-buttons">
-                    <svg class="arrow-button prev-button" xmlns="http://www.w3.org/2000/svg" height="40px"
-                        viewBox="0 0 320 512">
-                        <path
-                            d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-                    </svg>
-                    <svg class="arrow-button next-button" xmlns="http://www.w3.org/2000/svg" height="40px"
-                        viewBox="0 0 320 512">
-                        <path
-                            d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                    </svg>
-                </div>
             </div>
         </div>
 
@@ -303,19 +270,6 @@
                     <img src="https://play-lh.googleusercontent.com/p19HnByPfsMgW2QA9pnkl2dnsBGyc8mss830Anh3sbVfYHKKH9spZelQP-rALaF4bA=w1052-h592-rw"
                         alt="Screenshot 5" class="screenshot">
                 </div>
-                <div class="navigation-buttons">
-                    <svg class="arrow-button prev-button" xmlns="http://www.w3.org/2000/svg" height="40px"
-                        viewBox="0 0 320 512">
-                        <path
-                            d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-                    </svg>
-                    <svg class="arrow-button next-button" xmlns="http://www.w3.org/2000/svg" height="40px"
-                        viewBox="0 0 320 512">
-                        <path
-                            d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                    </svg>
-                </div>
-            </div>
 
         </div>
 

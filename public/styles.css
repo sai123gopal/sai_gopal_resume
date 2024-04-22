@@ -274,14 +274,6 @@ nav {
     position: relative;
     max-width: 90%;
   }
-
-  .navigation-buttons {
-    display: block;
-    justify-content: start;
-    align-items: start;
-    margin-top: 10px;
-    width: 20%;
-  }
 }
 
 .mysummary{
@@ -766,13 +758,6 @@ footer {
   transform: scale(1.02);
 }
 
-.navigation-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  width: 100%;
-}
 
 .arrow-button {
   background-color: #fff;
