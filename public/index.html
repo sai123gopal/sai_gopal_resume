@@ -18,7 +18,7 @@
     <meta name="description"
         content="I am a passionate Software Engineer with expertise in Mobile app development. I have a strong focus on building high-performance and user-friendly">
     <meta name="keywords"
-        content="portfolio, Sai gopal, saigopal_sai, sai123gopal, sai123gopal github, sai gopal reddy. portfolio website, Software Engineer, Android developer, Flutter developer">
+        content="portfolio, springboot, Sai gopal, saigopal_sai, sai123gopal, sai123gopal github, sai gopal reddy. portfolio website, Software Engineer, Android developer, Flutter developer">
     <meta name="robots" content="index,follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -111,10 +111,24 @@
         <!-- Work Experience Card Container -->
         <div class="experience-card-container">
             <!-- Work Experience Card 1 -->
+
             <div class="experience-card">
                 <h3>Android Developer</h3>
-                <p>NanoHealth</p>
-                <p>06/2023 - Present, Hyderabad</p>
+                <p><a href="https://tummoc.com/">Tummoc</a></p>
+                <p>12/2023 - Present, Bengaluru</p>
+                <ul>
+                    <li>Implemented help and support module
+                    </li>
+                    <li>Collaborated with cross-functional teams to define app features and functionality.</li>
+                    <li>Implemented Firebase realtime DB for in app notifications</li>
+                </ul>
+            </div>
+
+
+            <div class="experience-card">
+                <h3>Android Developer</h3>
+                <p><a href="https://www.nanohealth.in/">NanoHealth</a></p>
+                <p>06/2023 - 12/2023, Hyderabad</p>
                 <ul>
                     <li>Proficiently implemented MVVM architecture for improved app performance and maintainability.
                     </li>
@@ -123,10 +137,9 @@
                 </ul>
             </div>
 
-            <!-- Work Experience Card 2 -->
             <div class="experience-card">
                 <h3>Android Application Developer</h3>
-                <p>OSOS Pvt. Ltd (Spaarks)</p>
+                <p><a href="https://www.ososweb.com/">OSOS Pvt. Ltd (Spaarks)</a></p>
                 <p>10/2022 - 03/2023, Hyderabad</p>
                 <ul>
                     <li>Developed Android apps with API integration, Retrofit, and REST APIs.</li>
@@ -135,47 +148,12 @@
                 </ul>
             </div>
 
-            <!-- Add more work experience cards as needed -->
         </div>
     </section>
 
 
     <section id="projects" class="projects fade-in">
         <h2>Projects</h2>
-
-        <script>
-            function setupAppCardNavigation(appCard) {
-                const screenshotsContainer = appCard.querySelector('.screenshots-container');
-                const screenshots = appCard.querySelector('.screenshots');
-                const screenshotWidth = appCard.querySelector('.screenshot').offsetWidth;
-                let currentIndex = 0;
-
-                function setScreenshotHeight() {
-                    const screenHeight = window.innerHeight;
-                    const desiredHeight = screenHeight * 0.6;
-                    const aspectRatio = 16 / 9;
-                    const newHeight = Math.min(desiredHeight, screenshotWidth * aspectRatio);
-                    screenshots.style.maxHeight = `${newHeight}px`;
-                }
-
-                window.addEventListener('resize', setScreenshotHeight);
-                setScreenshotHeight();
-
-                function scrollScreenshots(direction) {
-                    if (direction === 'next' && currentIndex < screenshots.children.length - 1) {
-                        currentIndex++;
-                    } else if (direction === 'prev' && currentIndex > 0) {
-                        currentIndex--;
-                    }
-
-                    const offset = -currentIndex * screenshotWidth;
-                    screenshots.style.transform = `translateX(${offset}px)`;
-                }
-            }
-
-
-        </script>
-
 
         <div class="app-card">
             <div class="app-details">
@@ -230,14 +208,17 @@
 
             <div class="screenshots-container">
                 <div class="screenshots">
-                    <img src="https://play-lh.googleusercontent.com/PnItO41-A1ci9cfovaf1TtRCk2OyF91RlId3QAFrhsyG38eOrjZ7pTbjRPWDszx_D40=w1052-h592-rw"
+                    <img src="https://play-lh.googleusercontent.com/nKXZjtYwOJJ2_NFMbYAOJCLQKcdwFl7ZhOyiOvktWj-l91z3hRhQnXUJzzdRvtZZig=w2560-h1440-rw"
                         alt="Screenshot 1" class="screenshot">
-                    <img src="https://play-lh.googleusercontent.com/t3b27dQBJ4k9q67v6klM_RrppaNXjMIbCDf_DBgzZscPtGoAEyE2ebJLWuC9MSK-dSg=w1052-h592-rw"
+                    <img src="https://play-lh.googleusercontent.com/OrZxtu-9ur57oYGmCdpPYXv0mVm4pE1zUvOv70corNdB5SmxlFrLzHuLztSGh2jkEyQ6=w2560-h1440-rw"
                         alt="Screenshot 2" class="screenshot">
-                    <img src="https://play-lh.googleusercontent.com/GfsFiz4Ev2-abbPeg-7eco-9a-ebXaEg65cR4RGP3-nJJuMh0KBpfdLCeS5YPSoBrYo=w1052-h592-rw"
+                    <img src="https://play-lh.googleusercontent.com/DWDTVqKEfvC6yhQNnyZ83IsoSWhVfyh8nsJRhL_yRTfjvhpNJbrHsMv5St0DitEa4A=w2560-h1440-rw"
                         alt="Screenshot 3" class="screenshot">
-                    <img src="https://play-lh.googleusercontent.com/dEF7Yp_FvDLIxPVeh5YMC351WhNa1y6pk7hW02MWrzPyEIyfQQFKt8pZPidBuWz7RBQ=w1052-h592-rw"
+                    <img src="https://play-lh.googleusercontent.com/I_RM5NWOqxg8AhVMGPbXFui4IASYzLdIx75oTlPmqYBE9laK23N8Mha86bh5-13AOg=w2560-h1440-rw"
                         alt="Screenshot 4" class="screenshot">
+                    <img src="https://play-lh.googleusercontent.com/OCTKaRxVvxWz_XyCi_7K-YA_Pc_fUZoIRfLl2lFwYaR9PNQ0n8JGHluHkZ1Lh2__K08=w2560-h1440-rw"
+                        alt="Screenshot 4" class="screenshot">
+
                 </div>
             </div>
         </div>
@@ -321,7 +302,10 @@
                 <p>Web Designing</p>
             </div>
             <div class="skills-chip">
-                <p>Node.js</p>
+                <p>Spring boot</p>
+            </div>
+            <div class="skills-chip">
+                <p>REST APIs</p>
             </div>
     
         </div>
@@ -388,7 +372,7 @@
 
 
     <footer>
-        <p>&copy; 2023 Sai Gopal</p>
+        <p>&copy; 2024 Sai Gopal</p>
     </footer>
 </body>
 
